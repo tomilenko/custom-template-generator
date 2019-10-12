@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@tomilenko/custom-template-generator": "^0.2.2"
+    "@tomilenko/custom-template-generator": "^0.2.5"
   }
 }

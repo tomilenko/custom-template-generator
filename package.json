@@ -1,6 +1,6 @@
 {
   "name": "@tomilenko/custom-template-generator",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "generate file template",
   "main": "lib/index.js",
   "scripts": {

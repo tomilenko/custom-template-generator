@@ -41,7 +41,7 @@ import Generator from '@tomilenko/custom-template-generator';
 import Generator from '@tomilenko/custom-template-generator';
 
 const options = {
-    customTemplatesUrl: './templates/',
+    customTemplatesUrl: __dirname + '/templates/',
     type: 'components',
     name: "button",
     dest: 'test',
@@ -60,7 +60,6 @@ customTemplatesUrl     | `string`  | Location of the custom templates folder
 type     | `string`  | Location of the custom types of templates folder
 dest                   | `string`  | Destination of generated templates files
 template           | `string`  | Template name
-absoluteDirName           | `string`  | Absolute current directory name
 autoIndent             | `boolean`  | Default set to false, will indent the whole file. Only works with js and ts files.
 isSingleFile             | `boolean`  | Default set to false. If you need to generate one file template
 wrapInFolder             | `boolean`  | Default set to true

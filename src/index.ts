@@ -14,7 +14,6 @@ export declare type GenerateOptions = {
     name: string;
     customTemplatesUrl: string;
     dest: string;
-    absoluteDirName: string;
     autoIndent?: boolean;
     data?: JSON;
     wrapInFolder?: boolean;
@@ -32,7 +31,6 @@ export default class Generator {
     constructor(options: GenerateOptions) {
         this._options = options;
         this._templateAbsolutePath = path.join(
-            options.absoluteDirName,
             options.customTemplatesUrl +
             '/' +
             options.type +
