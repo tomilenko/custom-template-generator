@@ -1,8 +1,13 @@
-## template-generator
+## notice
 
-[![npm version](https://badge.fury.io/js/custom-template-generator.svg)](https://badge.fury.io/js/custom-template-generator)
+This is FORK of custom-template-generator https://www.npmjs.com/package/custom-template-generator
 
-Help generate template files (angular, nodejs, backbone, java...)
+* Implement the same functionality with TypesScript
+
+## custom-template-generator
+
+[![npm version](https://badge.fury.io/js/%40tomilenko%2Fcustom-template-generator.svg)](https://badge.fury.io/js/%40tomilenko%2Fcustom-template-generator)
+[![Downloads/week](https://img.shields.io/npm/dw/@tomilenko/custom-template-generator)](https://npmjs.org/package/@tomilenko/custom-template-generator)
 
 ## Prerequisites
 
@@ -19,48 +24,65 @@ https://nodejs.org
 
 **BEFORE YOU INSTALL:** please read the [prerequisites](#prerequisites)
 ```bash
-npm install custom-template-generator
+npm install @tomilenko/custom-template-generator
 ```
 
 Once the plugin has been installed, just need to add this line:
 
-```javascript
-var generator = require('custom-template-generator');
+```ts
+
+import Generator from '@tomilenko/custom-template-generator';
 ```
 
 ## Usage
 
 
-```javascript
-var generator = require('custom-template-generator');
+```ts
+import Generator from '@tomilenko/custom-template-generator';
 
-generator({
-    componentName: "button",
+const options = {
     customTemplatesUrl: './templates/',
-    dest: 'src',
-    templateName: 'component'
-    autoIndent: true,
-    data: {
-        someStaticData: {},
-        size: 42,
-        desc: 'this button can talk'
-    }
-});
+    type: 'components',
+    name: "button",
+    dest: 'test',
+    template: 'component',
+    autoIndent: true
+};
+new Generator(options);
 ```
 
 ### Options
 
-
-
 Scaffold               | Type      | Usage
 ---                    |---        | ---
-componentName          | `string`  | Name of the component
+name          | `string`  | Name of the generated file/component/project
 customTemplatesUrl     | `string`  | Location of the custom templates folder
+type     | `string`  | Location of the custom types of templates folder
 dest                   | `string`  | Destination of generated templates files
-templateName           | `string`  | Template name
+template           | `string`  | Template name
+absoluteDirName           | `string`  | Absolute current directory name
 autoIndent             | `boolean`  | Default set to false, will indent the whole file. Only works with js and ts files.
+isSingleFile             | `boolean`  | Default set to false. If you need to generate one file template
+wrapInFolder             | `boolean`  | Default set to true
 autoIndentExtensions   | `array`    | The list of extensions file to indent. Default ['js', 'ts']
 data                    | `object` | This custom meta data can be injected in the custom template using '{}'
+### Directories structure
+You should have use the next templates directory structure:
+
+./templates -
+    type -
+        template
+
+For example:
+
+./templates -
+    - projects
+        - expressProject
+        - testProject
+    - components
+        - componentOne
+        - componentTwo
+
 
 
 ### Meta data
@@ -85,7 +107,7 @@ To help customized the file name `{component}` will be replace by the componentN
 
 The following template `{component}.interface.ts`:
 
-```javascript
+```ts
 // Angular imports
 import { ElementRef, Renderer } from '@angular/core';
 // Custom imports
@@ -110,8 +132,8 @@ export interface {Name}Interface<T> {
 
 By running this function
 
-```javascript
-generator({
+```ts
+new Generator({
     componentName: "button",
     customTemplatesUrl: './templates/',
     dest: 'src',
@@ -121,7 +143,7 @@ generator({
 
 Will generate this file
 
-```javascript
+```ts
 // Angular imports
 import { ElementRef, Renderer } from '@angular/core';
 // Custom imports
