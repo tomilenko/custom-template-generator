@@ -5,9 +5,9 @@ This is FORK of custom-template-generator https://www.npmjs.com/package/custom-t
 * Implement the same functionality with TypesScript
 
 ## custom-template-generator
-
 [![npm version](https://badge.fury.io/js/%40tomilenko%2Fcustom-template-generator.svg)](https://badge.fury.io/js/%40tomilenko%2Fcustom-template-generator)
 [![Downloads/week](https://img.shields.io/npm/dw/@tomilenko/custom-template-generator)](https://npmjs.org/package/@tomilenko/custom-template-generator)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LW54FD3RBE2PJ)
 
 ## Prerequisites
 
