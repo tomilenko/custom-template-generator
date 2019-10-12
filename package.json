@@ -1,6 +1,6 @@
 {
   "name": "@tomilenko/custom-template-generator",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "generate file template",
   "main": "lib/index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "@types/underscore.string": "^0.0.38"
   },
   "dependencies": {
-    "@tomilenko/logger": "^0.0.3",
+    "@tomilenko/logger": "^0.0.4",
     "fs-extra": "^8.1.0",
     "inquirer": "^0.4.1",
     "js-beautify": "^1.6.14",

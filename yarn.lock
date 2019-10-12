@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@tomilenko/logger@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@tomilenko/logger/-/logger-0.0.3.tgz#682d9c6d374726eb338f586677879b37438dbfed"
-  integrity sha512-XET74VLbKwMuhiIJ1hl9eokqf3fRQ/admUVExb5zJctyAqQm+dDwpZJHfEnlxwax4QeR2/ONZYOo46o4RndfgA==
+"@tomilenko/logger@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@tomilenko/logger/-/logger-0.0.4.tgz#8dc66a15b029685fb2a8c27406be6037228373d3"
+  integrity sha512-rE43NU3hHSiBRWOgQwFv5iqzZxcorRhYUbqlM7+BDIBam68rQ4jpsyEMJ/zYZZSEcU+gPsJk44jSTW0cKch9YQ==
   dependencies:
     figlet "^1.2.4"
     kleur "^3.0.3"
