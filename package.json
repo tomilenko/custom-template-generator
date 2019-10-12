@@ -1,29 +1,38 @@
 {
-  "name": "custom-template-generator",
-  "version": "0.1.2",
+  "name": "@tomilenko/custom-template-generator",
+  "version": "0.2.2",
   "description": "generate file template",
-  "main": "index.js",
-  "engines": {
-    "node": ">= 0.8.0"
-  },
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepack": "rm -rf lib && tsc"
   },
   "keywords": [
     "template",
     "generator",
     "custom"
   ],
-  "author": "Mourad Sabour",
+  "bugs": "https://github.com/tomilenko/custom-template-generator/issues",
+  "homepage": "https://github.com/tomilenko/custom-template-generator",
+  "author": "Vadym Tomilenko",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.0",
+    "@types/inquirer": "^6.5.0",
+    "@types/js-beautify": "^1.8.1",
+    "@types/lodash": "^4.14.144",
+    "@types/mkdirp": "^0.5.2",
+    "@types/string-template": "^1.0.2",
+    "@types/underscore.string": "^0.0.38"
+  },
   "dependencies": {
-    "js-beautify": "^1.6.14",
-    "string-template": "1.0.0",
-    "mkdirp": "0.5.1",
+    "@tomilenko/logger": "^0.0.3",
+    "fs-extra": "^8.1.0",
     "inquirer": "^0.4.1",
+    "js-beautify": "^1.6.14",
     "lodash": "4.17.4",
+    "mkdirp": "0.5.1",
     "path-complete-extname": "^0.1.0",
+    "string-template": "1.0.0",
     "underscore.string": "^2.3.3"
   }
 }

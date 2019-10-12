@@ -1,5 +1,6 @@
 node_modules
 demo/node_modules
 .idea
-demo/src/
+
+lib
 .DS_Store
