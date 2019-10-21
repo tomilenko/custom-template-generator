@@ -2,7 +2,7 @@
 
 This is FORK of custom-template-generator https://www.npmjs.com/package/custom-template-generator
 
-* Implement the same functionality with TypesScript
+* Implemented the same functionality with TypesScript
 
 ## custom-template-generator
 [![npm version](https://badge.fury.io/js/%40tomilenko%2Fcustom-template-generator.svg)](https://badge.fury.io/js/%40tomilenko%2Fcustom-template-generator)
